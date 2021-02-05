@@ -16,6 +16,7 @@ services:
       options:
         fluentd-address: localhost:24224
         tag: backend
+        fluentd-async-connect: "true"
   elasticsearch:
     image: elasticsearch:7.6.2
     container_name: elasticsearch
